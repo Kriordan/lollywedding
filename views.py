@@ -33,6 +33,3 @@ def logout():
 @app.route('/', methods=['GET', 'POST'])
 def themainpage():
     return render_template('themainpage.html')
-
-if __name__ == '__main__':
-    app.run(debug=True)

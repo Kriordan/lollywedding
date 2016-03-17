@@ -1,1 +1,1 @@
-web: gunicorn views:app --log-file=-
+web: python run.py
