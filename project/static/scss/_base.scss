@@ -1,4 +1,7 @@
+@import 'colors';
+
 .container {
+    background-color: $bg-gray;
     min-width: 320px;
     width: 100%;
 }

@@ -1,0 +1,67 @@
+.container {
+  background-color: #ddd;
+  min-width: 320px;
+  width: 100%; }
+
+.hero {
+  font-family: Muli, sans-serif;
+  height: 750px;
+  position: relative;
+  overflow: hidden; }
+  .hero-bgimg {
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -125px;
+    position: absolute;
+    right: 0;
+    width: 85%; }
+  .hero-logo {
+    margin: 42px 0;
+    text-align: center;
+    width: 125px; }
+  .hero-copy {
+    color: white;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    width: 565px; }
+    .hero-copy-title, .hero-copy-subtitle {
+      font-size: 21px;
+      font-weight: 100;
+      letter-spacing: .1em;
+      line-height: 0.5; }
+      .hero-copy-title span, .hero-copy-subtitle span {
+        display: inline-block;
+        position: relative; }
+        .hero-copy-title span:after, .hero-copy-title span:before, .hero-copy-subtitle span:after, .hero-copy-subtitle span:before {
+          border-bottom: 1px solid #fff;
+          content: "";
+          position: absolute;
+          top: 5px;
+          width: 100%; }
+        .hero-copy-title span:after, .hero-copy-subtitle span:after {
+          left: 100%;
+          margin-left: 15px; }
+        .hero-copy-title span:before, .hero-copy-subtitle span:before {
+          right: 100%;
+          margin-right: 15px; }
+    .hero-copy-names {
+      font-size: 64px;
+      letter-spacing: .07em;
+      margin: 85px 0; }
+
+.registrybanner {
+  background-color: #000;
+  bottom: 0;
+  font-family: Muli, sans-serif;
+  opacity: 0.7;
+  position: fixed;
+  text-align: center;
+  width: 100%; }
+  .registrybanner-link {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase; }

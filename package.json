@@ -1,0 +1,24 @@
+{
+  "name": "lollywedding",
+  "version": "0.0.0",
+  "description": "Holly & Lenny's Wedding Site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Kriordan/lollywedding.git"
+  },
+  "author": "Kriordan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kriordan/lollywedding/issues"
+  },
+  "homepage": "https://github.com/Kriordan/lollywedding",
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.2.0"
+  }
+}

@@ -1,6 +1,72 @@
+@import 'colors';
+
 .hero {
+    font-family: Muli, sans-serif;
+    height: 750px;
+    position: relative;
+    overflow: hidden;
+
+    &-bgimg {
+        left: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -125px;
+        position: absolute;
+        right: 0;
+        width: 85%;
+    }
 
     &-logo {
+        margin: 42px 0;
         text-align: center;
+        width: 125px;
+    }
+
+    &-copy {
+        color: white;
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        text-transform: uppercase;
+        width: 565px;
+
+        &-title,
+        &-subtitle {
+            font-size: 21px;
+            font-weight: 100;
+            letter-spacing: .1em;
+            line-height: 0.5;
+
+            span {
+                display: inline-block;
+                position: relative;
+
+                &:after,
+                &:before {
+                    border-bottom: 1px solid $white;
+                    content: "";
+                    position: absolute;
+                    top: 5px;
+                    width: 100%;
+                }
+
+                &:after {
+                    left: 100%;
+                    margin-left: 15px;
+                }
+
+                &:before {
+                    right: 100%;
+                    margin-right: 15px;
+                }
+            }
+        }
+
+        &-names {
+            font-size: 64px;
+            letter-spacing: .07em;
+            margin: 85px 0;
+        }
     }
 }
