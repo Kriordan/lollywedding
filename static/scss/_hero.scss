@@ -2,17 +2,13 @@
 
 .hero {
     font-family: Muli, sans-serif;
-    height: 750px;
     position: relative;
-    overflow: hidden;
 
     &-bgimg {
-        left: 0;
-        margin-left: auto;
-        margin-right: auto;
+        display: block;
+        margin: auto;
         margin-top: -125px;
-        position: absolute;
-        right: 0;
+        position: relative;
         width: 85%;
     }
 
@@ -24,11 +20,15 @@
 
     &-copy {
         color: white;
-        margin: auto;
+        left: 0;
+        margin-left: auto;
+        margin-right: auto;
         overflow: hidden;
-        position: relative;
+        position: absolute;
+        right: 0;
         text-align: center;
         text-transform: uppercase;
+        top: 125px;
         width: 565px;
 
         &-title,
