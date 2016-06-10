@@ -1,0 +1,28 @@
+.bridalparty {
+
+    &-bridesmaids,
+    &-groomsmen {
+        padding: 20px;
+        text-align: center;
+    }
+
+    &-bridesmaids {
+        background-color: #f8cdc0;
+    }
+
+    &-groomsmen {
+        background-color: #d0c5a2;
+    }
+
+    &-imagerow {
+        margin: 30px auto;
+
+        &-title {
+            margin-top: 30px;
+        }
+
+        &-image {
+            margin: 0 15px;
+        }
+    }
+}

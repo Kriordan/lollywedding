@@ -1,17 +1,21 @@
+body {
+  background-color: #ddd; }
+
 .container {
-  background-color: #ddd;
+  font-family: Muli, sans-serif;
+  margin: 0 auto 62px;
+  max-width: 1200px;
   min-width: 320px;
-  width: 100%; }
+  width: 1200px; }
 
 .hero {
-  font-family: Muli, sans-serif;
   position: relative; }
   .hero-bgimg {
     display: block;
     margin: auto;
     margin-top: -125px;
     position: relative;
-    width: 85%; }
+    width: 100%; }
   .hero-logo {
     margin: 42px 0;
     text-align: center;
@@ -53,12 +57,41 @@
       letter-spacing: .07em;
       margin: 85px 0; }
 
+.aboutus {
+  background-color: #ede7d6;
+  padding: 40px 20px;
+  text-align: center; }
+  .aboutus-img {
+    margin: 40px auto; }
+  .aboutus-story {
+    margin: auto;
+    max-width: 500px; }
+
+.bridalparty-bridesmaids, .bridalparty-groomsmen {
+  padding: 20px;
+  text-align: center; }
+
+.bridalparty-bridesmaids {
+  background-color: #f8cdc0; }
+
+.bridalparty-groomsmen {
+  background-color: #d0c5a2; }
+
+.bridalparty-imagerow {
+  margin: 30px auto; }
+  .bridalparty-imagerow-title {
+    margin-top: 30px; }
+  .bridalparty-imagerow-image {
+    margin: 0 15px; }
+
 .registrybanner {
   background-color: #000;
   bottom: 0;
   font-family: Muli, sans-serif;
+  left: 0;
   opacity: 0.7;
   position: fixed;
+  right: 0;
   text-align: center;
   width: 100%; }
   .registrybanner-link {

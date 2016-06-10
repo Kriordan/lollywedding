@@ -1,0 +1,14 @@
+.aboutus {
+    background-color: #ede7d6;
+    padding: 40px 20px;
+    text-align: center;
+
+    &-img {
+        margin: 40px auto;
+    }
+
+    &-story {
+        margin: auto;
+        max-width: 500px;
+    }
+}
