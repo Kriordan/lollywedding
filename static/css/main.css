@@ -4,12 +4,14 @@
   font-size: 18px;
   font-weight: 300;
   line-height: 1.4;
-  margin: 0 auto 62px;
+  margin: 60px auto 30px;
   max-width: 1000px;
   min-width: 320px;
   width: 100%; }
 
 .Hero {
+  margin-bottom: 60px;
+  padding: 0 30px;
   position: relative; }
   .Hero-copy {
     overflow: hidden;
@@ -38,7 +40,8 @@
     .Hero-copy-names {
       font-size: 64px;
       letter-spacing: .07em;
-      margin: 85px 0; }
+      margin: 85px 0;
+      padding: 0 30px; }
 
 .AboutUs {
   padding: 40px 20px; }
