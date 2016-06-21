@@ -1,44 +1,12 @@
 @import 'colors';
 
-.hero {
+.Hero {
     position: relative;
 
-    &-bgimg {
-        display: block;
-        margin: auto;
-        margin-top: -125px;
-        position: relative;
-        width: 100%;
-    }
-
-    &-logo {
-        margin: 42px 0;
-        text-align: center;
-        width: 125px;
-    }
-
     &-copy {
-        color: white;
-        left: 0;
-        margin-left: auto;
-        margin-right: auto;
         overflow: hidden;
-        position: absolute;
-        right: 0;
         text-align: center;
         text-transform: uppercase;
-        top: 125px;
-        @media (min-width: 600px ) {
-            width: 565px;
-        }
-
-        &-desktop-wrapper {
-            display: none;
-
-            @media ( min-width: 600px ) {
-                display: block;
-            }
-        }
 
         &-title,
         &-subtitle {
@@ -53,7 +21,7 @@
 
                 &:after,
                 &:before {
-                    border-bottom: 1px solid $white;
+                    border-bottom: 1px solid $black;
                     content: "";
                     position: absolute;
                     top: 5px;
@@ -76,48 +44,6 @@
             font-size: 64px;
             letter-spacing: .07em;
             margin: 85px 0;
-        }
-    }
-
-    &-copy-mobile {
-        bottom: 90px;
-        position: absolute;
-        text-align: center;
-        width: 100%;
-
-        @media ( min-width: 600px ) {
-            display: none;
-        }
-
-        &-title {
-            color: $white;
-            font-size: 21px;
-            font-weight: 100;
-            letter-spacing: .1em;
-            line-height: 0.5;
-
-            span {
-                display: inline-block;
-                position: relative;
-
-                &:after,
-                &:before {
-                    border-bottom: 1px solid $white;
-                    content: "";
-                    position: absolute;
-                    width: 100%;
-                }
-
-                &:after {
-                    bottom: -20px;
-                    left: 0;
-                }
-
-                &:before {
-                    right: 0;
-                    top: -20px;
-                }
-            }
         }
     }
 }

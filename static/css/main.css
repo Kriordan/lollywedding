@@ -1,10 +1,7 @@
-body {
-  background-color: #000; }
-
 .container {
   background-color: #fff;
   font-family: Muli, sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
   line-height: 1.4;
   margin: 0 auto 62px;
@@ -12,89 +9,36 @@ body {
   min-width: 320px;
   width: 100%; }
 
-.hero {
+.Hero {
   position: relative; }
-  .hero-bgimg {
-    display: block;
-    margin: auto;
-    margin-top: -125px;
-    position: relative;
-    width: 100%; }
-  .hero-logo {
-    margin: 42px 0;
-    text-align: center;
-    width: 125px; }
-  .hero-copy {
-    color: white;
-    left: 0;
-    margin-left: auto;
-    margin-right: auto;
+  .Hero-copy {
     overflow: hidden;
-    position: absolute;
-    right: 0;
     text-align: center;
-    text-transform: uppercase;
-    top: 125px; }
-    @media (min-width: 600px) {
-      .hero-copy {
-        width: 565px; } }
-    .hero-copy-desktop-wrapper {
-      display: none; }
-      @media (min-width: 600px) {
-        .hero-copy-desktop-wrapper {
-          display: block; } }
-    .hero-copy-title, .hero-copy-subtitle {
+    text-transform: uppercase; }
+    .Hero-copy-title, .Hero-copy-subtitle {
       font-size: 21px;
       font-weight: 100;
       letter-spacing: .1em;
       line-height: 0.5; }
-      .hero-copy-title span, .hero-copy-subtitle span {
+      .Hero-copy-title span, .Hero-copy-subtitle span {
         display: inline-block;
         position: relative; }
-        .hero-copy-title span:after, .hero-copy-title span:before, .hero-copy-subtitle span:after, .hero-copy-subtitle span:before {
-          border-bottom: 1px solid #fff;
+        .Hero-copy-title span:after, .Hero-copy-title span:before, .Hero-copy-subtitle span:after, .Hero-copy-subtitle span:before {
+          border-bottom: 1px solid #000;
           content: "";
           position: absolute;
           top: 5px;
           width: 100%; }
-        .hero-copy-title span:after, .hero-copy-subtitle span:after {
+        .Hero-copy-title span:after, .Hero-copy-subtitle span:after {
           left: 100%;
           margin-left: 15px; }
-        .hero-copy-title span:before, .hero-copy-subtitle span:before {
+        .Hero-copy-title span:before, .Hero-copy-subtitle span:before {
           right: 100%;
           margin-right: 15px; }
-    .hero-copy-names {
+    .Hero-copy-names {
       font-size: 64px;
       letter-spacing: .07em;
       margin: 85px 0; }
-  .hero-copy-mobile {
-    bottom: 90px;
-    position: absolute;
-    text-align: center;
-    width: 100%; }
-    @media (min-width: 600px) {
-      .hero-copy-mobile {
-        display: none; } }
-    .hero-copy-mobile-title {
-      color: #fff;
-      font-size: 21px;
-      font-weight: 100;
-      letter-spacing: .1em;
-      line-height: 0.5; }
-      .hero-copy-mobile-title span {
-        display: inline-block;
-        position: relative; }
-        .hero-copy-mobile-title span:after, .hero-copy-mobile-title span:before {
-          border-bottom: 1px solid #fff;
-          content: "";
-          position: absolute;
-          width: 100%; }
-        .hero-copy-mobile-title span:after {
-          bottom: -20px;
-          left: 0; }
-        .hero-copy-mobile-title span:before {
-          right: 0;
-          top: -20px; }
 
 .AboutUs {
   padding: 40px 20px; }
@@ -134,7 +78,9 @@ body {
       font-weight: 300;
       margin-top: 10px; }
     .BridalParty-bridesmaid-image, .BridalParty-groomsman-image {
-      margin: 0 15px; }
+      margin: 0 15px;
+      max-width: 175px;
+      width: 100%; }
 
 .registrybanner {
   background-color: #000;
@@ -215,6 +161,8 @@ body {
       top: 0; }
     .Accomodations-locations-linkCopy {
       text-decoration: underline; }
+    .Accomodations-locations-arrows {
+      margin: 20px 0; }
 
 .Registries {
   padding: 40px 20px;
