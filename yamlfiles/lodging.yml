@@ -1,0 +1,19 @@
+
+reserved:
+  address: "445 Pittsfield Road, Lenox MA 01240"
+  link: "http://hamptoninn3.hilton.com/en/hotels/massachusetts/hampton-inn-and-suites-berkshires-lenox-SFYLXHX/index.html"
+  name: "Hampton Inn & Suites Berkshires"
+
+bed_and_breakfasts:
+  -
+    address: "2 Kemble Street, Lenox MA 01240"
+    link: "http://kembleinn.com/"
+    name: "The Kemble Inn"
+  -
+    address: "7 Hubbard Street, Lenox MA 01240"
+    link: "http://www.birchwood-inn.com/"
+    name: "Birchwood Inn"
+  -
+    address: "91 Walker Street, Lenox MA 02140"
+    link: "http://www.hamptonterrace.com/"
+    name: "Hampton Terrace Bed and Breakfast Inn"

@@ -1,12 +1,16 @@
 body {
-  background-color: #ddd; }
+  background-color: #000; }
 
 .container {
+  background-color: #fff;
   font-family: Muli, sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.4;
   margin: 0 auto 62px;
-  max-width: 1200px;
+  max-width: 1000px;
   min-width: 320px;
-  width: 1200px; }
+  width: 100%; }
 
 .hero {
   position: relative; }
@@ -30,8 +34,15 @@ body {
     right: 0;
     text-align: center;
     text-transform: uppercase;
-    top: 125px;
-    width: 565px; }
+    top: 125px; }
+    @media (min-width: 600px) {
+      .hero-copy {
+        width: 565px; } }
+    .hero-copy-desktop-wrapper {
+      display: none; }
+      @media (min-width: 600px) {
+        .hero-copy-desktop-wrapper {
+          display: block; } }
     .hero-copy-title, .hero-copy-subtitle {
       font-size: 21px;
       font-weight: 100;
@@ -56,33 +67,74 @@ body {
       font-size: 64px;
       letter-spacing: .07em;
       margin: 85px 0; }
+  .hero-copy-mobile {
+    bottom: 90px;
+    position: absolute;
+    text-align: center;
+    width: 100%; }
+    @media (min-width: 600px) {
+      .hero-copy-mobile {
+        display: none; } }
+    .hero-copy-mobile-title {
+      color: #fff;
+      font-size: 21px;
+      font-weight: 100;
+      letter-spacing: .1em;
+      line-height: 0.5; }
+      .hero-copy-mobile-title span {
+        display: inline-block;
+        position: relative; }
+        .hero-copy-mobile-title span:after, .hero-copy-mobile-title span:before {
+          border-bottom: 1px solid #fff;
+          content: "";
+          position: absolute;
+          width: 100%; }
+        .hero-copy-mobile-title span:after {
+          bottom: -20px;
+          left: 0; }
+        .hero-copy-mobile-title span:before {
+          right: 0;
+          top: -20px; }
 
-.aboutus {
-  background-color: #ede7d6;
-  padding: 40px 20px;
-  text-align: center; }
-  .aboutus-img {
-    margin: 40px auto; }
-  .aboutus-story {
+.AboutUs {
+  padding: 40px 20px; }
+  .AboutUs-title, .AboutUs-image {
+    display: block;
+    margin: auto; }
+  .AboutUs-image {
+    margin: 40px auto;
+    max-width: 464px;
+    width: 100%; }
+  .AboutUs-story {
     margin: auto;
-    max-width: 500px; }
+    max-width: 520px; }
+  .AboutUs-realstory {
+    display: none; }
 
-.bridalparty-bridesmaids, .bridalparty-groomsmen {
-  padding: 20px;
-  text-align: center; }
-
-.bridalparty-bridesmaids {
-  background-color: #f8cdc0; }
-
-.bridalparty-groomsmen {
-  background-color: #d0c5a2; }
-
-.bridalparty-imagerow {
-  margin: 30px auto; }
-  .bridalparty-imagerow-title {
-    margin-top: 30px; }
-  .bridalparty-imagerow-image {
-    margin: 0 15px; }
+.BridalParty {
+  padding: 40px 20px;
+  position: relative; }
+  .BridalParty:before {
+    border-top: 1px solid #ddd;
+    content: '';
+    height: 1px;
+    left: 8%;
+    position: absolute;
+    right: 8%;
+    top: 0; }
+  .BridalParty-bridesmaids, .BridalParty-groomsmen {
+    text-align: center; }
+    .BridalParty-bridesmaids-title, .BridalParty-groomsmen-title {
+      display: block;
+      margin: auto; }
+  .BridalParty-bridesmaid, .BridalParty-groomsman {
+    display: inline-block;
+    margin: 30px auto; }
+    .BridalParty-bridesmaid-name, .BridalParty-groomsman-name {
+      font-weight: 300;
+      margin-top: 10px; }
+    .BridalParty-bridesmaid-image, .BridalParty-groomsman-image {
+      margin: 0 15px; }
 
 .registrybanner {
   background-color: #000;
@@ -98,3 +150,90 @@ body {
     color: #fff;
     text-decoration: none;
     text-transform: uppercase; }
+
+.Details {
+  padding: 40px 20px;
+  position: relative; }
+  .Details:before {
+    border-top: 1px solid #ddd;
+    content: '';
+    height: 1px;
+    left: 8%;
+    position: absolute;
+    right: 8%;
+    top: 0; }
+  .Details-title, .Details-image {
+    display: block;
+    margin: auto; }
+  .Details-image {
+    max-width: 464px;
+    width: 100%; }
+  .Details-agenda-item {
+    margin: 20px;
+    text-align: center; }
+  .Details-agenda-time, .Details-agenda-title {
+    font-size: 20px;
+    line-height: 1.4;
+    margin: 0; }
+
+.Accomodations {
+  padding: 40px 20px;
+  position: relative; }
+  .Accomodations:before {
+    border-top: 1px solid #ddd;
+    content: '';
+    height: 1px;
+    left: 8%;
+    position: absolute;
+    right: 8%;
+    top: 0; }
+  .Accomodations-title, .Accomodations-image {
+    display: block;
+    margin: auto; }
+  .Accomodations-image {
+    max-width: 464px;
+    width: 100%; }
+  .Accomodations-locations {
+    margin: auto;
+    text-align: center;
+    max-width: 410px; }
+    .Accomodations-locations-reserved, .Accomodations-locations-bedAndBreakfast {
+      margin: auto;
+      padding: 10px 20px;
+      position: relative;
+      max-width: 390px; }
+      .Accomodations-locations-reserved:hover, .Accomodations-locations-bedAndBreakfast:hover {
+        background-color: #e7e7e7;
+        border-radius: 5px; }
+    .Accomodations-locations-name, .Accomodations-locations-address, .Accomodations-locations-linkCopy {
+      margin: 0; }
+    .Accomodations-locations-link {
+      bottom: 0;
+      cursor: pointer;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0; }
+    .Accomodations-locations-linkCopy {
+      text-decoration: underline; }
+
+.Registries {
+  padding: 40px 20px;
+  position: relative;
+  text-align: center; }
+  .Registries:before {
+    border-top: 1px solid #ddd;
+    content: '';
+    height: 1px;
+    left: 8%;
+    position: absolute;
+    right: 8%;
+    top: 0; }
+  .Registries-link {
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px; }
+  .Registries-image {
+    max-width: 290px;
+    width: 100%; }

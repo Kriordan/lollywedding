@@ -1,0 +1,21 @@
+.Registries {
+    padding: 40px 20px;
+    position: relative;
+    text-align: center;
+
+    &:before {
+        @include pseudo-partial-top-border();
+    }
+
+    &-link {
+        box-sizing: border-box;
+        display: inline-block;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    &-image {
+        max-width: 290px;
+        width: 100%;
+    }
+}

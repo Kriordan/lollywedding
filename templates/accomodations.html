@@ -1,0 +1,31 @@
+<section class="Accomodations">
+    <img
+        class="Accomodations-title"
+        alt="Accomodations"
+        src="{{ url_for('static', filename='img/accomodations_title.png')}}"
+    />
+    <img
+        class="Accomodations-image"
+        alt="Accomodations"
+        src="{{ url_for('static', filename='img/accomodations_hero.png')}}"
+    />
+    <div class="Accomodations-locations">
+        <p>A block of rooms has been reserved at the following location:</p>
+        <div class="Accomodations-locations-reserved">
+            <a class="Accomodations-locations-link" href="{{ lodging.reserved.link }}"></a>
+            <p class="Accomodations-locations-name">{{ lodging.reserved.name }}</p>
+            <p class="Accomodations-locations-address">{{ lodging.reserved.address }}</p>
+            <p class="Accomodations-locations-linkCopy" href="#">Website</p>
+        </div>
+        <p>Please reference Whiteside/Tricarico wedding when booking</p>
+        <p>We strongly encourage the following bed & breakfasts for an authentic Berkshires experience:</p>
+        {% for bnb in lodging.bed_and_breakfasts %}
+            <div class="Accomodations-locations-bedAndBreakfast">
+                <a class="Accomodations-locations-link" href="{{ bnb.link }}"></a>
+                <p class="Accomodations-locations-name">{{ bnb.name }}</p>
+                <p class="Accomodations-locations-address">{{ bnb.address }}</p>
+                <p class="Accomodations-locations-linkCopy" href="#">Website</p>
+            </div>
+        {% endfor %}
+    </div>
+</section>

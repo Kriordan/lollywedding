@@ -1,0 +1,34 @@
+.Details {
+    padding: 40px 20px;
+    position: relative;
+
+    &:before {
+        @include pseudo-partial-top-border();
+    }
+
+    &-title,
+    &-image {
+        display: block;
+        margin: auto;
+    }
+
+    &-image {
+        max-width: 464px;
+        width: 100%;
+    }
+
+    &-agenda {
+
+        &-item {
+            margin: 20px;
+            text-align: center;
+        }
+
+        &-time,
+        &-title {
+            font-size: 20px;
+            line-height: 1.4;
+            margin: 0;
+        }
+    }
+}

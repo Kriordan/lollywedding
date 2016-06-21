@@ -1,24 +1,29 @@
-.bridalparty {
+.BridalParty {
+    padding: 40px 20px;
+    position: relative;
+
+    &:before {
+        @include pseudo-partial-top-border();
+    }
 
     &-bridesmaids,
     &-groomsmen {
-        padding: 20px;
         text-align: center;
-    }
-
-    &-bridesmaids {
-        background-color: #f8cdc0;
-    }
-
-    &-groomsmen {
-        background-color: #d0c5a2;
-    }
-
-    &-imagerow {
-        margin: 30px auto;
 
         &-title {
-            margin-top: 30px;
+            display: block;
+            margin: auto;
+        }
+    }
+
+    &-bridesmaid,
+    &-groomsman {
+        display: inline-block;
+        margin: 30px auto;
+
+        &-name {
+            font-weight: 300;
+            margin-top: 10px;
         }
 
         &-image {

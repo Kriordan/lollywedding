@@ -1,0 +1,51 @@
+groomsmen:
+  -
+    name: Daniel Norwick
+    image: dan.jpg
+  -
+    name: Keith Riordan
+    image: keith.jpg
+  -
+    name: Colin MacArdle
+    image: colin.jpg
+  -
+    name: Daniel Ryan
+    image: danr.jpg
+  -
+    name: Benjamin Berte
+    image: ben.jpg
+  -
+    name: TJ Genzale
+    image: tj.jpg
+  -
+    name: Christopher Toomey
+    image: chris.jpg
+  -
+    name: Sal Princiotta
+    image: sal.jpg
+
+bridesmaids:
+  -
+    name: Erica Whiteside
+    image: ericaw.jpg
+  -
+    name: Nicole Candito
+    image: nikki.jpg
+  -
+    name: Deanna Tricarico
+    image: deanna.jpg
+  -
+    name: Erica Fernandes
+    image: erica.jpg
+  -
+    name: Sarah Ryan
+    image: sarah.jpg
+  -
+    name: Elizabeth Thorndike
+    image: elizabeth.jpg
+  -
+    name: Kate MacArdle
+    image: kate.jpg
+  -
+    name: Andrea Morin
+    image: andrea.jpg

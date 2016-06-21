@@ -1,0 +1,9 @@
+@mixin pseudo-partial-top-border() {
+    border-top: 1px solid #ddd;
+    content: '';
+    height: 1px;
+    left: 8%;
+    position: absolute;
+    right: 8%;
+    top: 0;
+}

@@ -28,7 +28,17 @@
         text-align: center;
         text-transform: uppercase;
         top: 125px;
-        width: 565px;
+        @media (min-width: 600px ) {
+            width: 565px;
+        }
+
+        &-desktop-wrapper {
+            display: none;
+
+            @media ( min-width: 600px ) {
+                display: block;
+            }
+        }
 
         &-title,
         &-subtitle {
@@ -66,6 +76,48 @@
             font-size: 64px;
             letter-spacing: .07em;
             margin: 85px 0;
+        }
+    }
+
+    &-copy-mobile {
+        bottom: 90px;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+
+        @media ( min-width: 600px ) {
+            display: none;
+        }
+
+        &-title {
+            color: $white;
+            font-size: 21px;
+            font-weight: 100;
+            letter-spacing: .1em;
+            line-height: 0.5;
+
+            span {
+                display: inline-block;
+                position: relative;
+
+                &:after,
+                &:before {
+                    border-bottom: 1px solid $white;
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                }
+
+                &:after {
+                    bottom: -20px;
+                    left: 0;
+                }
+
+                &:before {
+                    right: 0;
+                    top: -20px;
+                }
+            }
         }
     }
 }

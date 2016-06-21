@@ -1,0 +1,57 @@
+.Accomodations {
+    padding: 40px 20px;
+    position: relative;
+
+    &:before {
+        @include pseudo-partial-top-border();
+    }
+
+    &-title,
+    &-image {
+        display: block;
+        margin: auto;
+    }
+
+    &-image {
+        max-width: 464px;
+        width: 100%;
+    }
+
+    &-locations {
+        margin: auto;
+        text-align: center;
+        max-width: 410px;
+
+        &-reserved,
+        &-bedAndBreakfast {
+            margin: auto;
+            padding: 10px 20px;
+            position: relative;
+            max-width: 390px;
+
+            &:hover {
+                background-color: $bg-gray;
+                border-radius: 5px;
+            }
+        }
+
+        &-name,
+        &-address,
+        &-linkCopy {
+            margin: 0;
+        }
+
+        &-link {
+            bottom: 0;
+            cursor: pointer;
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        &-linkCopy {
+            text-decoration: underline;
+        }
+    }
+}

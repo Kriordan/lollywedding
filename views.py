@@ -1,4 +1,4 @@
-import sqlite3
+import sqlite3, yaml
 from functools import wraps
 
 from flask import Flask, flash, redirect, render_template, \
@@ -27,9 +27,17 @@ def logout():
     flash('Peace bitches!')
     return redirect(url_for('login'))
 
+# yamlfiles
+
+AGENDA = yaml.load( open( 'yamlfiles/agenda.yml' ) )
+BRIDALPARTY = yaml.load( open( 'yamlfiles/bridalparty.yml' ) )
+LODGING = yaml.load( open( 'yamlfiles/lodging.yml' ) )
 
 # routes
 
 @app.route('/', methods=['GET', 'POST'])
 def themainpage():
-    return render_template('themainpage.html')
+    agenda = AGENDA
+    bridalparty = BRIDALPARTY
+    lodging = LODGING
+    return render_template('themainpage.html', bridalparty=bridalparty, agenda=agenda, lodging=lodging)

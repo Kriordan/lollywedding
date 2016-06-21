@@ -1,28 +1,36 @@
-<section class="bridalparty">
-    <div class="bridalparty-bridesmaids">
-        <h2 class="bridalparty-imagerow-title">Bride's Party</h2>
-        <div class="bridalparty-imagerow">
-            {% for n in range(4) %}
-                <img class="bridalparty-imagerow-image" src="http://placekitten.com/200/300"/>
-            {% endfor %} 
+<section class="BridalParty">
+    <div class="BridalParty-bridesmaids">
+        <img
+            class="BridalParty-bridesmaids-title"
+            alt="The Ladies"
+            src="{{ url_for('static', filename='img/the_ladies_title.png')}}"
+        />
+        {% for bridesmaid in bridalparty.bridesmaids %}
+        <div class="BridalParty-bridesmaid">
+            <img
+                class="BridalParty-bridesmaid-image"
+                alt="{{ bridesmaid.name }}"
+                src="{{ url_for('static', filename='img/bridesmaids/')}}{{ bridesmaid.image }}"
+            />
+            <h4 class="BridalParty-bridesmaid-name">{{ bridesmaid.name }}</h4>
         </div>
-        <div class="bridalparty-imagerow">
-            {% for n in range(4) %}
-                <img class="bridalparty-imagerow-image" src="http://placekitten.com/200/300"/>
-            {% endfor %} 
-        </div>
+        {% endfor %}
     </div>
-    <div class="bridalparty-groomsmen">
-        <h2 class="bridalparty-imagerow-title">Bride's Party</h2>
-        <div class="bridalparty-imagerow">
-            {% for n in range(4) %}
-                <img class="bridalparty-imagerow-image" src="http://placekitten.com/200/300"/>
-            {% endfor %} 
+    <div class="BridalParty-groomsmen">
+        <img
+            class="BridalParty-groomsmen-title"
+            alt="The Guys"
+            src="{{ url_for('static', filename='img/the_guys_title.png')}}"
+        />
+        {% for groomsman in bridalparty.groomsmen %}
+        <div class="BridalParty-groomsman">
+            <img
+                class="BridalParty-groomsman-image"
+                alt="{{ groomsman.name }}"
+                src="{{ url_for('static', filename='img/groomsmen/')}}{{ groomsman.image }}"
+            />
+            <h4 class="BridalParty-groomsman-name">{{ groomsman.name }}</h4>
         </div>
-        <div class="bridalparty-imagerow">
-            {% for n in range(4) %}
-                <img class="bridalparty-imagerow-image" src="http://placekitten.com/200/300"/>
-            {% endfor %} 
-        </div>
+        {% endfor %}
     </div>
 </section>
