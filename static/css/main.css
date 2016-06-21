@@ -196,12 +196,11 @@ body {
   .Accomodations-locations {
     margin: auto;
     text-align: center;
-    max-width: 410px; }
+    max-width: 430px; }
     .Accomodations-locations-reserved, .Accomodations-locations-bedAndBreakfast {
       margin: auto;
       padding: 10px 20px;
-      position: relative;
-      max-width: 390px; }
+      position: relative; }
       .Accomodations-locations-reserved:hover, .Accomodations-locations-bedAndBreakfast:hover {
         background-color: #e7e7e7;
         border-radius: 5px; }

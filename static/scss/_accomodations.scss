@@ -20,14 +20,13 @@
     &-locations {
         margin: auto;
         text-align: center;
-        max-width: 410px;
+        max-width: 430px;
 
         &-reserved,
         &-bedAndBreakfast {
             margin: auto;
             padding: 10px 20px;
             position: relative;
-            max-width: 390px;
 
             &:hover {
                 background-color: $bg-gray;
