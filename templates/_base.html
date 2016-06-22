@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="utf-8" />
+        <meta
+            content="width=device-width, initial-scale=1.0"
+            name="viewport"/>
         <title>Welcome to Holly and Lennys Wedding Site!</title>
         <link
             href="https://fonts.googleapis.com/css?family=Muli:300,400"
@@ -12,6 +16,7 @@
         <link
             href="{{ url_for('static', filename='css/main.css') }}"
             rel="stylesheet">
+        <script src="{{ url_for('static', filename='js/modernizr.js') }}"></script>
         <!-- Hotjar Tracking Code for http://www.hollyandlenny.com -->
         <script>
             (function(h,o,t,j,a,r){
@@ -39,5 +44,7 @@
             {% endblock %}
 
         </div>
+        <script src="{{ url_for('static', filename='js/jquery-3.0.0.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/lolly.js') }}"></script>
     </body>
 </html>

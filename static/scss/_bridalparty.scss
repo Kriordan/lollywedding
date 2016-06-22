@@ -8,18 +8,26 @@
 
     &-bridesmaids,
     &-groomsmen {
+        margin: auto;
+        max-width: 600px;
         text-align: center;
 
         &-title {
             display: block;
-            margin: auto;
+            margin: 20px auto;
         }
     }
 
     &-bridesmaid,
     &-groomsman {
         display: inline-block;
-        margin: 30px auto;
+        margin: 30px 10px;
+        max-width: 120px;
+        vertical-align: top;
+
+        @media ( min-width: 600px ) {
+            max-width: auto;
+        }
 
         &-name {
             font-weight: 300;
@@ -27,8 +35,7 @@
         }
 
         &-image {
-            margin: 0 15px;
-            max-width: 175px;
+            max-width: 150px;
             width: 100%;
         }
     }

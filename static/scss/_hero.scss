@@ -1,7 +1,7 @@
 @import 'colors';
 
 .Hero {
-    margin-bottom: 60px;
+    margin-bottom: 100px;
     padding: 0 30px;
     position: relative;
 
@@ -15,7 +15,6 @@
             font-size: 21px;
             font-weight: 100;
             letter-spacing: .1em;
-            line-height: 0.5;
 
             span {
                 display: inline-block;
@@ -26,7 +25,7 @@
                     border-bottom: 1px solid $black;
                     content: "";
                     position: absolute;
-                    top: 5px;
+                    top: 12px;
                     width: 100%;
                 }
 
@@ -46,7 +45,40 @@
             font-size: 64px;
             letter-spacing: .07em;
             margin: 85px 0;
-            padding: 0 30px;
+        }
+    }
+
+    &-navigation {
+        margin-top: 60px;
+        text-align: center;
+
+        @media ( min-width: 600px ) {
+            margin-top: 90px;
+        }
+
+
+        &-list {
+            padding: 0;
+            text-decoration: none;
+        }
+
+        &-item {
+            display: block;
+            padding: 20px;
+
+            @media ( min-width: 600px ) {
+                display: inline-block;
+                padding: 10px 20px;
+                vertical-align: top;
+            }
+        }
+
+        &-link {
+            color: $black;
+            display: block;
+            height: 100%;
+            text-decoration: none;
+            width: 100%;
         }
     }
 }

@@ -1,16 +1,19 @@
 .container {
   background-color: #fff;
   font-family: Muli, sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
   line-height: 1.4;
   margin: 60px auto 30px;
   max-width: 1000px;
   min-width: 320px;
   width: 100%; }
+  @media (min-width: 600px) {
+    .container {
+      margin-top: 150px; } }
 
 .Hero {
-  margin-bottom: 60px;
+  margin-bottom: 100px;
   padding: 0 30px;
   position: relative; }
   .Hero-copy {
@@ -20,8 +23,7 @@
     .Hero-copy-title, .Hero-copy-subtitle {
       font-size: 21px;
       font-weight: 100;
-      letter-spacing: .1em;
-      line-height: 0.5; }
+      letter-spacing: .1em; }
       .Hero-copy-title span, .Hero-copy-subtitle span {
         display: inline-block;
         position: relative; }
@@ -29,7 +31,7 @@
           border-bottom: 1px solid #000;
           content: "";
           position: absolute;
-          top: 5px;
+          top: 12px;
           width: 100%; }
         .Hero-copy-title span:after, .Hero-copy-subtitle span:after {
           left: 100%;
@@ -40,8 +42,30 @@
     .Hero-copy-names {
       font-size: 64px;
       letter-spacing: .07em;
-      margin: 85px 0;
-      padding: 0 30px; }
+      margin: 85px 0; }
+  .Hero-navigation {
+    margin-top: 60px;
+    text-align: center; }
+    @media (min-width: 600px) {
+      .Hero-navigation {
+        margin-top: 90px; } }
+    .Hero-navigation-list {
+      padding: 0;
+      text-decoration: none; }
+    .Hero-navigation-item {
+      display: block;
+      padding: 20px; }
+      @media (min-width: 600px) {
+        .Hero-navigation-item {
+          display: inline-block;
+          padding: 10px 20px;
+          vertical-align: top; } }
+    .Hero-navigation-link {
+      color: #000;
+      display: block;
+      height: 100%;
+      text-decoration: none;
+      width: 100%; }
 
 .AboutUs {
   padding: 40px 20px; }
@@ -70,19 +94,25 @@
     right: 8%;
     top: 0; }
   .BridalParty-bridesmaids, .BridalParty-groomsmen {
+    margin: auto;
+    max-width: 600px;
     text-align: center; }
     .BridalParty-bridesmaids-title, .BridalParty-groomsmen-title {
       display: block;
-      margin: auto; }
+      margin: 20px auto; }
   .BridalParty-bridesmaid, .BridalParty-groomsman {
     display: inline-block;
-    margin: 30px auto; }
+    margin: 30px 10px;
+    max-width: 120px;
+    vertical-align: top; }
+    @media (min-width: 600px) {
+      .BridalParty-bridesmaid, .BridalParty-groomsman {
+        max-width: auto; } }
     .BridalParty-bridesmaid-name, .BridalParty-groomsman-name {
       font-weight: 300;
       margin-top: 10px; }
     .BridalParty-bridesmaid-image, .BridalParty-groomsman-image {
-      margin: 0 15px;
-      max-width: 175px;
+      max-width: 150px;
       width: 100%; }
 
 .registrybanner {
@@ -143,7 +173,7 @@
   .Accomodations-locations {
     margin: auto;
     text-align: center;
-    max-width: 430px; }
+    max-width: 370px; }
     .Accomodations-locations-reserved, .Accomodations-locations-bedAndBreakfast {
       margin: auto;
       padding: 10px 20px;
@@ -163,7 +193,7 @@
     .Accomodations-locations-linkCopy {
       text-decoration: underline; }
     .Accomodations-locations-arrows {
-      margin: 20px 0; }
+      margin: 50px 0 20px; }
 
 .Registries {
   padding: 40px 20px;
