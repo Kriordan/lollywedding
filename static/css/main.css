@@ -43,29 +43,6 @@
       font-size: 64px;
       letter-spacing: .07em;
       margin: 85px 0; }
-  .Hero-navigation {
-    margin-top: 60px;
-    text-align: center; }
-    @media (min-width: 600px) {
-      .Hero-navigation {
-        margin-top: 90px; } }
-    .Hero-navigation-list {
-      padding: 0;
-      text-decoration: none; }
-    .Hero-navigation-item {
-      display: block;
-      padding: 20px; }
-      @media (min-width: 600px) {
-        .Hero-navigation-item {
-          display: inline-block;
-          padding: 10px 20px;
-          vertical-align: top; } }
-    .Hero-navigation-link {
-      color: #000;
-      display: block;
-      height: 100%;
-      text-decoration: none;
-      width: 100%; }
 
 .AboutUs {
   padding: 40px 20px; }
@@ -215,3 +192,58 @@
   .Registries-image {
     max-width: 290px;
     width: 100%; }
+
+.Navigation {
+  text-align: center; }
+  .Navigation-mobile-button {
+    background: #fff;
+    border: none;
+    display: none;
+    height: 40px;
+    padding: 0;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 40px; }
+    .Navigation-mobile-button-icon {
+      -webkit-box-shadow: 0 12px 0 1px #000, 0 20px 0 1px #000, 0 28px 0 1px #000;
+      box-shadow: 0 12px 0 1px #000, 0 20px 0 1px #000, 0 28px 0 1px #000;
+      content: '';
+      left: 5px;
+      position: absolute;
+      right: 5px;
+      top: 0; }
+  .Navigation-list {
+    margin: 0;
+    padding: 0;
+    text-decoration: none; }
+  .Navigation-item {
+    display: block;
+    line-height: 60px; }
+    @media (min-width: 800px) {
+      .Navigation-item {
+        display: inline-block;
+        padding: 0 20px;
+        vertical-align: top; } }
+  .Navigation-link {
+    color: #000;
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    width: 100%; }
+  .Navigation.fixedTop {
+    background: #fff;
+    box-shadow: 0 1px 10px #ddd;
+    height: 60px;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: height 1s;
+    z-index: 1000; }
+    @media (max-width: 800px) {
+      .Navigation.fixedTop .Navigation-mobile-button {
+        display: block; } }
+  .Navigation.isOpen {
+    height: 375px; }

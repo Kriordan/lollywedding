@@ -47,38 +47,4 @@
             margin: 85px 0;
         }
     }
-
-    &-navigation {
-        margin-top: 60px;
-        text-align: center;
-
-        @media ( min-width: 600px ) {
-            margin-top: 90px;
-        }
-
-
-        &-list {
-            padding: 0;
-            text-decoration: none;
-        }
-
-        &-item {
-            display: block;
-            padding: 20px;
-
-            @media ( min-width: 600px ) {
-                display: inline-block;
-                padding: 10px 20px;
-                vertical-align: top;
-            }
-        }
-
-        &-link {
-            color: $black;
-            display: block;
-            height: 100%;
-            text-decoration: none;
-            width: 100%;
-        }
-    }
 }

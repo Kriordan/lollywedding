@@ -12,3 +12,23 @@ $(function() {
     }
   });
 });
+
+var trigStickyNav = $('#navigation').offset();
+$( window ).scroll(function() {
+  if ( $( window ).scrollTop() >= trigStickyNav.top ) {
+    $('.Navigation').addClass('fixedTop');
+  }
+  if ( $( window ).scrollTop() < trigStickyNav.top ) {
+    $('.Navigation').removeClass('isOpen fixedTop');
+  }
+});
+
+$('.js-open-navmenu').click(function() {
+  if ( $('.Navigation').hasClass('fixedTop') ) {
+    $('.Navigation').toggleClass('isOpen');
+  }
+});
+
+$('.Navigation-link').click(function() {
+  $('.Navigation').removeClass('isOpen');
+});
