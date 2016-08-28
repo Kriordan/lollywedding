@@ -124,6 +124,10 @@
   .Details-image {
     max-width: 464px;
     width: 100%; }
+  .Details-imageCaptionWrapper {
+    text-align: center; }
+    .Details-imageCaptionWrapper p {
+      margin: 0; }
   .Details-agenda-item {
     margin: 20px;
     text-align: center; }

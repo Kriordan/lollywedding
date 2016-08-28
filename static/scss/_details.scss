@@ -17,6 +17,14 @@
         width: 100%;
     }
 
+    &-imageCaptionWrapper {
+        text-align: center;
+
+        p {
+            margin: 0;
+        }
+    }
+
     &-agenda {
 
         &-item {
