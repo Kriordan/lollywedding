@@ -1,8 +1,13 @@
 
 reserved:
-  address: "445 Pittsfield Road, Lenox MA 01240"
-  link: "http://hamptoninn3.hilton.com/en/hotels/massachusetts/hampton-inn-and-suites-berkshires-lenox-SFYLXHX/index.html"
-  name: "Hampton Inn & Suites Berkshires"
+  -
+    address: "435 Laurel Street, Lee MA 02140"
+    link: "http://blackswaninnberkshires.com/"
+    name: "Black Swan Inn"
+  -
+    address: "445 Pittsfield Road, Lenox MA 01240"
+    link: "http://hamptoninn3.hilton.com/en/hotels/massachusetts/hampton-inn-and-suites-berkshires-lenox-SFYLXHX/index.html"
+    name: "Hampton Inn & Suites Berkshires"
 
 bed_and_breakfasts:
   -

@@ -11,16 +11,18 @@
     />
     <div class="Accomodations-locations">
         <p>A block of rooms has been reserved at the following location:</p>
-        <div class="Accomodations-locations-reserved">
-            <a
-                class="Accomodations-locations-link"
-                href="{{ lodging.reserved.link }}"
-                target="_blank"
-            ></a>
-            <p class="Accomodations-locations-name">{{ lodging.reserved.name }}</p>
-            <p class="Accomodations-locations-address">{{ lodging.reserved.address }}</p>
-            <p class="Accomodations-locations-linkCopy" href="#">Website</p>
-        </div>
+        {% for inn in lodging.reserved %}
+            <div class="Accomodations-locations-reserved">
+                <a
+                    class="Accomodations-locations-link"
+                    href="{{ inn.link }}"
+                    target="_blank"
+                ></a>
+                <p class="Accomodations-locations-name">{{ inn.name }}</p>
+                <p class="Accomodations-locations-address">{{ inn.address }}</p>
+                <p class="Accomodations-locations-linkCopy" href="#">Website</p>
+            </div>
+        {% endfor %}
         <p>Please reference Whiteside/Tricarico wedding when booking</p>
         <p>We strongly encourage the following bed & breakfasts for an authentic Berkshires experience:</p>
         {% for bnb in lodging.bed_and_breakfasts %}
